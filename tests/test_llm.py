@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from types import SimpleNamespace
 
-import httpx
 import openai
 import pytest
 
@@ -131,9 +130,10 @@ def test_responses_api_warns_on_non_completed_status(caplog: pytest.LogCaptureFi
 
 
 def _rate_limit_error(message: str = "Rate limited, try again in 0.01s") -> openai.RateLimitError:
-    request = httpx.Request("POST", "https://api.openai.com/v1/chat/completions")
-    response = httpx.Response(status_code=429, request=request)
-    return openai.RateLimitError(message, response=response, body=None)
+    # Duck-typed response: openai 2.x is built on httpx and 3.x on httpx2, so avoid depending on either.
+    request = SimpleNamespace(method="POST", url="https://api.openai.com/v1/chat/completions")
+    response = SimpleNamespace(status_code=429, headers={}, request=request)
+    return openai.RateLimitError(message, response=response, body=None)  # type: ignore[arg-type]
 
 
 def test_rate_limit_retries_then_succeeds(monkeypatch: pytest.MonkeyPatch) -> None:
