@@ -1,0 +1,117 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sec-research-agent"
+version = "0.1.0"
+description = "Collect SEC filings and earnings-call transcripts locally and turn them into AI-written equity research reports."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Involabs" }]
+keywords = ["sec", "edgar", "10-k", "earnings-calls", "rag", "llm", "equity-research", "streamlit"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "earningscall>=1.0,<3",
+    "numpy>=1.26,<3",
+    "openai>=1.60,<3",
+    "pydantic>=2.6,<3",
+    "pydantic-settings>=2.2,<3",
+    "pypdf>=4.0,<7",
+    "python-docx>=1.1,<2",
+    "PyYAML>=6.0,<7",
+    "reportlab>=4.0,<5",
+    "rich>=13.0,<15",
+    "sec-api>=1.0.20,<2",
+    "streamlit>=1.40,<2",
+    "yfinance>=0.2.40,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "mypy>=1.10",
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.6",
+    "types-PyYAML",
+]
+
+[project.scripts]
+sec-research = "sec_research_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+sec_research_agent = ["reports/templates/*.md", "reports/templates/*.yaml", "py.typed"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "N", "C4", "PTH", "RET"]
+ignore = ["RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["PTH"]
+
+[tool.mypy]
+# Pinned above the project's minimum supported Python (3.11) only so mypy can parse the PEP 695
+# `type` statements used inside numpy's bundled stubs; it does not relax version checks on our
+# own code, which still targets 3.11 (see [tool.ruff] target-version).
+python_version = "3.12"
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_return_any = true
+check_untyped_defs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+# Third-party packages without type stubs or py.typed markers.
+module = [
+    "sec_api.*",
+    "earningscall.*",
+    "yfinance.*",
+    "reportlab.*",
+    "docx.*",
+    "streamlit.*",
+    "pandas.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.coverage.run]
+source = ["sec_research_agent"]
+branch = true
+omit = ["*/ui/*"]
+
+[tool.coverage.report]
+show_missing = true
+exclude_also = [
+    "if TYPE_CHECKING:",
+    "raise AssertionError\\(\"unreachable\"\\)",
+    "if __name__ == .__main__.:",
+]

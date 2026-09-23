@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    image: sec-research-agent
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

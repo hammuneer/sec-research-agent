@@ -1,0 +1,271 @@
+# Research topics extracted via RAG before the report is written.
+# Each topic: id, name, report sections it feeds, retrieval queries, doc_types, top_k, all_periods, prompt.
+topics:
+- id: business_model
+  name: Business Model & Revenue Mechanism
+  stencil_sections:
+  - The Cocktail Party
+  - The Alpha Engine
+  queries:
+  - What does the company do products and services offered
+  - How the company generates revenue and makes money unit economics
+  - Customer segments target market end users served
+  - Business segments divisions and revenue breakdown
+  - Contract duration average term renewal length
+  - Switching costs integration regulatory friction
+  doc_types:
+  - 10-K
+  top_k: 15
+  prompt: |-
+    Extract and STRUCTURE as a persuasive narrative:
+    1. Clear plain-English explanation of what the company does
+    2. Revenue model and how the economic engine works (e.g., recurring subscriptions, land-and-expand, per-unit sales, project/contract backlog, premiums, royalties)
+    3. Contract duration and switching costs
+    4. Customer types and niche positioning
+    5. Business segments and revenue mix
+
+    Then explicitly explain:
+    - What the market may misunderstand about this model
+    - Why the engine is durable or fragile
+    Avoid metric dumping. Integrate interpretation.
+    Max 700 words.
+- id: competition
+  name: Competitive Landscape (The Arena)
+  stencil_sections:
+  - The Arena
+  queries:
+  - Competitors competitive landscape named competitors
+  - Competitive pressure market position market share
+  - Who constrains returns today competitive dynamics
+  - Pricing pressure bundling core vendors
+  doc_types:
+  - 10-K
+  - EarningsCall
+  top_k: 12
+  prompt: |-
+    Extract and structure strategically:
+    1. Specific named competitors
+    2. How they constrain returns today (pricing, bundling, switching friction)
+    3. Company's positioning vs them
+    4. Depth of switching costs and moat sustainability
+
+    Then interpret:
+    - Is the moat structural or cyclical?
+    - What would have to happen for returns to compress materially?
+    Do not just list competitors — evaluate them.
+    Max 500 words.
+- id: industry
+  name: Industry Structure (Industry Guide)
+  stencil_sections:
+  - Industry Guide
+  queries:
+  - Industry dynamics structural forces long-term trends
+  - Regulatory environment industry regulation technology shifts
+  - Barriers to entry switching costs industry economics
+  - Industry consolidation trends and technology or digital adoption shifts
+  doc_types:
+  - 10-K
+  top_k: 10
+  prompt: |-
+    Extract slow-moving structural forces shaping the industry:
+    - Regulation
+    - Technology shifts
+    - Barriers to entry
+    - Consolidation trends
+
+    Then explicitly discuss:
+    - Macro risks (cyclicality, credit or rate exposure, consolidation, regulatory change)
+    - Whether demand is discretionary or non-discretionary
+    Do NOT repeat specific competitors.
+    Max 450 words.
+- id: revenue_growth
+  name: Revenue & Scale (Quant Audit)
+  stencil_sections:
+  - 'Quant Audit: Revenue & Scale'
+  all_periods: true
+  queries:
+  - Total revenue annual quarterly revenue growth rate year over year
+  - Revenue acceleration deceleration growth trend
+  - Recurring or contracted revenue subscription revenue backlog bookings
+  - Revenue by quarter Q1 Q2 Q3 Q4 full year trend
+  doc_types:
+  - 10-K
+  - 10-Q
+  top_k: 30
+  prompt: |-
+    Extract ALL revenue figures chronologically:
+    - Total revenue per period (FY and quarterly)
+    - YoY growth rates
+    - Recurring/contracted revenue trends (ARR, subscription, or backlog), where applicable
+    - Acceleration or deceleration phases
+
+    Then interpret:
+    - Identify growth inflection phases
+    - Explain what operational drivers caused changes
+    - Assess durability of growth vs one-time factors
+
+    Do not present raw numbers without interpretation.
+    Max 900 words.
+- id: profitability
+  name: Profitability & Margin Bridge (Quant Audit)
+  stencil_sections:
+  - 'Quant Audit: Profitability & Leverage'
+  all_periods: true
+  queries:
+  - Gross profit gross margin operating income operating margin
+  - Net income loss EBITDA adjusted EBITDA margin
+  - Cost of revenue operating expenses SGA research development
+  - Margin expansion contraction operating leverage
+  doc_types:
+  - 10-K
+  - 10-Q
+  top_k: 30
+  prompt: |-
+    Extract ALL profitability metrics chronologically:
+    - Gross margin %, operating margin %, EBITDA margin %
+    - Dollar amounts
+    - Margin expansion or contraction trend
+
+    Then construct a margin bridge:
+    - Gross margin drivers
+    - Sales & marketing intensity
+    - R&D intensity
+    - G&A leverage
+
+    Explain whether operating leverage is structurally emerging.
+    Link margin trajectory to potential valuation multiple expansion.
+    Max 900 words.
+- id: balance_sheet
+  name: Balance Sheet, Dilution & Capital Efficiency
+  stencil_sections:
+  - 'Quant Audit: Capital Efficiency'
+  - Future Scenarios
+  all_periods: true
+  queries:
+  - Cash and equivalents total debt long term debt balance sheet
+  - Operating cash flow free cash flow capital expenditures
+  - Shares outstanding stock based compensation dilution
+  - Share repurchase buyback dividends capital return acquisition
+  doc_types:
+  - 10-K
+  - 10-Q
+  top_k: 20
+  prompt: |-
+    Extract chronologically:
+    - Cash
+    - Total debt and net debt
+    - OCF, CapEx, FCF
+    - Shares outstanding and dilution trend
+
+    Then interpret:
+    - Is dilution outpacing revenue or earnings growth?
+    - Is leverage manageable?
+    - Is capital allocation disciplined?
+    Frame dilution as economic tradeoff, not moral judgment.
+    Max 700 words.
+- id: operating_kpis
+  name: Core Variable & Operating KPIs
+  stencil_sections:
+  - Core Fundamental Driver
+  - Second-Order Fundamental
+  all_periods: true
+  queries:
+  - Key performance indicators and operating metrics management highlights to investors
+  - Registered users total users client count customer growth
+  - Recurring revenue ARR ARPU net revenue retention churn subscription mix (software and subscription businesses)
+  - Units shipped average selling price ASP gross margin by segment (hardware and consumer businesses)
+  - Net interest income net interest margin CET1 credit costs NPLs (banks and financial institutions)
+  - Production volumes realized prices proved reserves (energy and resources businesses)
+  - Pipeline stage patent expiration product concentration (pharmaceutical and biotech businesses)
+  - Comparable sales same-store sales store count inventory turns (retail businesses)
+  doc_types:
+  - 10-K
+  - 10-Q
+  - EarningsCall
+  top_k: 35
+  prompt: |-
+    Extract ALL company-specific operating KPIs that actually appear in the data, chronologically.
+
+    Then structure them hierarchically:
+    Primary driver (the operating KPI that most explains this company's economic performance — e.g. ARR/retention for software, units/ASP for hardware, NII/NIM for banks, production/pricing for energy, pipeline/patent life for pharma, comps/store count for retail, or another metric the company itself emphasizes)
+    Secondary drivers
+    Early warning indicators
+
+    Explain which metric truly determines long-term intrinsic value for this business model.
+    Only use KPIs present in the data — never invent one.
+    Avoid repetitive phrasing — focus on economic durability.
+    Max 1000 words.
+- id: governance_compensation
+  name: Governance & Compensation
+  stencil_sections:
+  - MANAGEMENT, CAPITAL ALLOCATION, AND INCENTIVES
+  queries:
+  - Board of directors composition independence committee structure
+  - Chief executive officer chief financial officer named executive officers
+  - Executive compensation program salary bonus equity awards pay mix
+  - Pay versus performance compensation actually paid CEO pay ratio
+  - Say-on-pay advisory vote results shareholder approval
+  - Beneficial ownership insider ownership percentage of shares held by executives and directors
+  - Related party transactions conflicts of interest
+  - Dual-class shares voting rights shareholder rights takeover defenses
+  doc_types:
+  - Proxy
+  - 10-K
+  top_k: 20
+  prompt: |-
+    Extract and structure:
+    1. Board composition, independence, and committee structure
+    2. CEO, CFO, and other named executive officers
+    3. Executive compensation mix (salary, bonus, equity) and pay-vs-performance alignment
+    4. Say-on-pay vote results
+    5. Insider/beneficial ownership percentages
+    6. Related-party transactions and any dual-class share or shareholder-rights provisions
+
+    Then interpret:
+    - Is management's incentive structure aligned with long-term shareholders?
+    - Are there governance red flags (weak board independence, entrenchment, related-party conflicts)?
+    Only report figures and names that appear in the data; if not disclosed, say so explicitly.
+    Max 500 words.
+- id: future_scenarios
+  name: Future Scenarios & Expected Value
+  stencil_sections:
+  - Future Scenarios
+  queries:
+  - Forward guidance revenue growth margin outlook
+  - Long term margin targets financial goals
+  doc_types:
+  - EarningsCall
+  - 10-K
+  top_k: 15
+  prompt: |-
+    Construct three scenarios:
+    Bull / Base / Bear
+
+    For each include:
+    - Revenue CAGR assumption (ARR CAGR for subscription businesses)
+    - Margin assumption
+    - Valuation multiple assumption
+    - What breaks first in bear case
+
+    Explicitly link operational assumptions to valuation outcomes.
+    Include expected value logic.
+    Max 800 words.
+- id: reflexivity
+  name: Reflexivity & Market Psychology
+  stencil_sections:
+  - Reflexivity Checkpoints
+  queries:
+  - Stock price volatility capital raising acquisition currency
+  - Management commentary investor sentiment valuation discussion
+  doc_types:
+  - EarningsCall
+  top_k: 10
+  prompt: |-
+    Explain feedback loops between stock price and operations:
+    - Acquisition currency effects
+    - SBC leverage
+    - Institutional ownership behavior
+    - Multiple expansion psychology
+
+    Assess whether valuation itself changes business outcomes.
+    Max 500 words.

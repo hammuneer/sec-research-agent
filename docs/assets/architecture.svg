@@ -1,0 +1,373 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 1340" width="1680" height="1340">
+<defs>
+
+<marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+  <path d="M0,0 L10,5 L0,10 z" fill="#2563AF"/>
+</marker>
+<marker id="arrowSlate" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.4" markerHeight="6.4" orient="auto-start-reverse">
+  <path d="M0,0 L10,5 L0,10 z" fill="#8695A7"/>
+</marker>
+<marker id="arrowStore" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.4" markerHeight="6.4" orient="auto-start-reverse">
+  <path d="M0,0 L10,5 L0,10 z" fill="#0E8F6B"/>
+</marker>
+<marker id="arrowAI" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.4" markerHeight="6.4" orient="auto-start-reverse">
+  <path d="M0,0 L10,5 L0,10 z" fill="#7C3AED"/>
+</marker>
+<filter id="cardShadow" x="-20%" y="-20%" width="140%" height="160%">
+  <feDropShadow dx="0" dy="2.5" stdDeviation="4" flood-color="#1E3A5F" flood-opacity="0.14"/>
+</filter>
+<filter id="bigShadow" x="-10%" y="-10%" width="120%" height="130%">
+  <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0F2036" flood-opacity="0.16"/>
+</filter>
+
+</defs>
+<rect x="0" y="0" width="1680" height="1340" rx="0" fill="#EEF1F5"/>
+<rect x="16" y="16" width="1648" height="1308" rx="26" filter="url(#bigShadow)" fill="#FFFFFF" stroke="#E4E9EF" stroke-width="1.5"/>
+<text x="840.0" y="62" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="800" fill="#1E3A5F" text-anchor="middle" letter-spacing="0.2px">Involabs Financial Agent — Architecture</text>
+<text x="840.0" y="90" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="500" fill="#5B6B7C" text-anchor="middle">SEC Research Agent: from filings to research reports</text>
+<circle cx="564.8" cy="108" r="6.5" fill="#C2540A"/>
+<text x="577.8" y="112" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#5B6B7C" text-anchor="start">External source</text>
+<circle cx="715.8" cy="108" r="6.5" fill="#7C3AED"/>
+<text x="728.8" y="112" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#5B6B7C" text-anchor="start">AI / LLM step</text>
+<circle cx="853.5999999999999" cy="108" r="6.5" fill="#0E8F6B"/>
+<text x="866.5999999999999" y="112" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#5B6B7C" text-anchor="start">Local storage</text>
+<circle cx="991.3999999999999" cy="108" r="6.5" fill="#2563AF"/>
+<text x="1004.3999999999999" y="112" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600" fill="#5B6B7C" text-anchor="start">Pipeline flow</text>
+<line x1="48" y1="128" x2="1632" y2="128" stroke="#D7DEE6" stroke-width="1.4"/>
+<rect x="48" y="148" width="1260" height="128" rx="16" fill="#F5F7FA"/>
+<rect x="62" y="160" width="84" height="24" rx="12.0" fill="#1E3A5F"/>
+<text x="104.0" y="176.025" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">START</text>
+<text x="160" y="176" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="15.5" font-weight="700" fill="#1E3A5F" text-anchor="start">Entry points</text>
+<rect x="64" y="188" width="606.0" height="72" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="64" y="188" width="5" height="72" rx="2.5" fill="#2563AF"/>
+<path d="M93.0,202 l10.0,4 l-10.0,4 l-10.0,-4 z" fill="#2563AF" opacity="1" stroke="#2563AF" stroke-width="1.3"/>
+<path d="M93.0,207 l10.0,4 l-10.0,4 l-10.0,-4 z" fill="#FFFFFF" opacity="0.6499999999999999" stroke="#2563AF" stroke-width="1.3"/>
+<path d="M93.0,212 l10.0,4 l-10.0,4 l-10.0,-4 z" fill="#FFFFFF" opacity="0.95" stroke="#2563AF" stroke-width="1.3"/>
+<text x="116" y="212" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Streamlit UI</text>
+<text x="116" y="229" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">streamlit run app.py  ·  4 pages</text>
+<rect x="116" y="234" width="72.0" height="22" rx="11.0" fill="#EAF1FB"/>
+<text x="152.0" y="248.78" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.8" font-weight="700" fill="#2563AF" text-anchor="middle">Research</text>
+<rect x="196.0" y="234" width="65.5" height="22" rx="11.0" fill="#EAF1FB"/>
+<text x="228.75" y="248.78" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.8" font-weight="700" fill="#2563AF" text-anchor="middle">Library</text>
+<rect x="269.5" y="234" width="117.5" height="22" rx="11.0" fill="#EAF1FB"/>
+<text x="328.25" y="248.78" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.8" font-weight="700" fill="#2563AF" text-anchor="middle">Prompt Settings</text>
+<rect x="395.0" y="234" width="72.0" height="22" rx="11.0" fill="#EAF1FB"/>
+<text x="431.0" y="248.78" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.8" font-weight="700" fill="#2563AF" text-anchor="middle">Settings</text>
+<rect x="686.0" y="188" width="606.0" height="72" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="686.0" y="188" width="5" height="72" rx="2.5" fill="#2563AF"/>
+<rect x="703.0" y="204" width="24" height="20" rx="3" fill="#FFFFFF" stroke="#2563AF" stroke-width="1.6"/>
+<text x="707.0" y="220" font-family="Menlo, Consolas, monospace" font-size="11" font-weight="700" fill="#2563AF" text-anchor="start">&gt;_</text>
+<text x="738.0" y="214" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">CLI</text>
+<text x="738.0" y="232" font-family="Menlo, Consolas, monospace" font-size="12.6" font-weight="700" fill="#14293F" text-anchor="start">$ sec-research AAPL --report</text>
+<text x="738.0" y="252" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.4" font-weight="500" fill="#5B6B7C" text-anchor="start">one-shot: collect filings, then write</text>
+<text x="738.0" y="267" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.4" font-weight="500" fill="#5B6B7C" text-anchor="start">a research report per ticker</text>
+<rect x="48" y="302" width="1260" height="150" rx="16" fill="#FDF0E5"/>
+<circle cx="75" cy="327" r="13" fill="#1E3A5F"/>
+<text x="75" y="332" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="98" y="332" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1E3A5F" text-anchor="start" letter-spacing="0.2px">Data Sources</text>
+<rect x="64" y="346" width="295.0" height="92" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="64" y="346" width="5" height="92" rx="2.5" fill="#C2540A"/>
+<path d="M85,378 a5,5 0 0 1 0,-10 a6,6 0 0 1 11.5,-2 a4.5,4.5 0 0 1 1.5,8.8 a4,4 0 0 1 -1,3.2 z" fill="#FFFFFF" stroke="#C2540A" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="116" y="372" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">sec-api.io</text>
+<text x="116" y="389.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">10-K, 10-Q, DEF 14A proxy</text>
+<text x="116" y="407.96000000000004" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">rendered to PDF via</text>
+<text x="116" y="425.94000000000005" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">PdfGeneratorApi</text>
+<rect x="375.0" y="346" width="295.0" height="92" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="375.0" y="346" width="5" height="92" rx="2.5" fill="#C2540A"/>
+<path d="M396.0,378 a5,5 0 0 1 0,-10 a6,6 0 0 1 11.5,-2 a4.5,4.5 0 0 1 1.5,8.8 a4,4 0 0 1 -1,3.2 z" fill="#FFFFFF" stroke="#C2540A" stroke-width="1.6" stroke-linejoin="round"/>
+<text x="427.0" y="372" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">EarningsCall API</text>
+<text x="427.0" y="389.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Past-quarter transcripts</text>
+<text x="427.0" y="407.96000000000004" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">(earningscall.biz)</text>
+<text x="427.0" y="425.94000000000005" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">rendered to PDF locally</text>
+<rect x="686.0" y="346" width="295.0" height="92" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="686.0" y="346" width="5" height="92" rx="2.5" fill="#C2540A"/>
+<rect x="703.0" y="363" width="24" height="20" rx="2.5" fill="#FFFFFF" stroke="#C2540A" stroke-width="1.4"/>
+<rect x="706.0" y="376" width="3" height="6" fill="#C2540A" opacity="0.85"/>
+<rect x="710.6" y="371" width="3" height="11" fill="#C2540A" opacity="0.85"/>
+<rect x="715.2" y="374" width="3" height="8" fill="#C2540A" opacity="0.85"/>
+<rect x="719.8" y="368" width="3" height="14" fill="#C2540A" opacity="0.85"/>
+<text x="738.0" y="372" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Yahoo Finance</text>
+<text x="738.0" y="389.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Price, market cap, sector,</text>
+<text x="738.0" y="407.96000000000004" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">industry, exchange</text>
+<text x="738.0" y="425.94000000000005" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">via the yfinance library</text>
+<rect x="997.0" y="346" width="295.0" height="92" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="997.0" y="346" width="5" height="92" rx="2.5" fill="#7C3AED"/>
+<circle cx="1026.0" cy="373.0" r="11.0" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+<circle cx="1021.0" cy="369.0" r="1.7" fill="#7C3AED"/>
+<circle cx="1031.0" cy="369.0" r="1.7" fill="#7C3AED"/>
+<circle cx="1026.0" cy="373.0" r="1.7" fill="#7C3AED"/>
+<circle cx="1021.0" cy="378.0" r="1.7" fill="#7C3AED"/>
+<circle cx="1031.0" cy="378.0" r="1.7" fill="#7C3AED"/>
+<line x1="1021.0" y1="369.0" x2="1026.0" y2="373.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="1031.0" y1="369.0" x2="1026.0" y2="373.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="1026.0" y1="373.0" x2="1021.0" y2="378.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="1026.0" y1="373.0" x2="1031.0" y2="378.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="1021.0" y1="369.0" x2="1031.0" y2="369.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<text x="1049.0" y="372" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">OpenAI</text>
+<text x="1049.0" y="389.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">text-embedding-3-small</text>
+<text x="1049.0" y="407.96000000000004" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">gpt-4o-mini  ·  gpt-5.4</text>
+<text x="1049.0" y="425.94000000000005" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">powers every purple step below</text>
+<rect x="48" y="478" width="1260" height="182" rx="16" fill="#F5F7FA"/>
+<circle cx="75" cy="503" r="13" fill="#1E3A5F"/>
+<text x="75" y="508" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="98" y="508" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1E3A5F" text-anchor="start" letter-spacing="0.2px">Stage 1 — Collect</text>
+<rect x="64" y="522" width="250" height="124" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="64" y="522" width="5" height="124" rx="2.5" fill="#2563AF"/>
+<circle cx="93.0" cy="549.0" r="7.0" fill="none" stroke="#2563AF" stroke-width="1.8"/>
+<circle cx="93.0" cy="549.0" r="2" fill="#2563AF"/>
+<line x1="102.5" y1="549.0" x2="105.2" y2="549.0" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="99.7" y1="555.7" x2="101.7" y2="557.7" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="93.0" y1="558.5" x2="93.0" y2="561.2" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="86.3" y1="555.7" x2="84.3" y2="557.7" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="83.5" y1="549.0" x2="80.8" y2="549.0" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="86.3" y1="542.3" x2="84.3" y2="540.3" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="93.0" y1="539.5" x2="93.0" y2="536.8" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="99.7" y1="542.3" x2="101.7" y2="540.3" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<text x="116" y="548" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">ResearchRunner</text>
+<text x="116" y="565.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">collection_workers = 4</text>
+<text x="116" y="583.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">one thread per ticker,</text>
+<text x="116" y="601.94" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">polled by the UI progress view</text>
+<rect x="330" y="522" width="300" height="124" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="330" y="522" width="5" height="124" rx="2.5" fill="#2563AF"/>
+<circle cx="357.0" cy="547.0" r="6.5" fill="none" stroke="#2563AF" stroke-width="1.8"/>
+<line x1="361.6" y1="551.6" x2="367.0" y2="557.0" stroke="#2563AF" stroke-width="2" stroke-linecap="round"/>
+<text x="382" y="548" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">DocumentCollector</text>
+<text x="382" y="565.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Fetches only missing documents</text>
+<text x="382" y="583.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">(idempotent — skips filenames</text>
+<text x="382" y="601.94" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">already on disk) · per-type limits</text>
+<rect x="646" y="522" width="646" height="124" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="646" y="522" width="5" height="124" rx="2.5" fill="#0E8F6B"/>
+<rect x="664" y="540" width="10.92" height="5" rx="1.4" fill="#FFFFFF" stroke="#0E8F6B" stroke-width="1.6"/>
+<rect x="664" y="543" width="22" height="14" rx="2.2" fill="#FFFFFF" stroke="#0E8F6B" stroke-width="1.6"/>
+<text x="698" y="546" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Local Document Store</text>
+<text x="698" y="566" font-family="Menlo, Consolas, monospace" font-size="11.6" font-weight="600" fill="#14293F" text-anchor="start">data/&lt;TICKER&gt;/{10-K, 10-Q, Proxy, EarningsCalls, reports}/</text>
+<text x="698" y="586" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.4" font-weight="500" fill="#5B6B7C" text-anchor="start">Atomic writes — temp file + os.replace(),</text>
+<text x="698" y="602" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.4" font-weight="500" fill="#5B6B7C" text-anchor="start">so readers never see a partial PDF</text>
+<text x="698" y="618" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.4" font-weight="500" fill="#5B6B7C" text-anchor="start">Existing files are never re-downloaded</text>
+<path d="M314,646 V658 H330 V646" fill="none" stroke="#2563AF" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="283.25" y="646.7" width="77.5" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="322.0" y="654.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#2563AF" text-anchor="middle">per ticker</text>
+<path d="M630,646 V658 H646 V646" fill="none" stroke="#0E8F6B" stroke-width="2.2" marker-end="url(#arrowStore)"/>
+<rect x="618.3" y="646.7" width="39.4" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="638.0" y="654.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#0E8F6B" text-anchor="middle">PDFs</text>
+<path d="M678.0,276 V290 H32 V584.0 H64" fill="none" stroke="#2563AF" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="278.15" y="278.7" width="153.7" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="355.0" y="286.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#2563AF" text-anchor="middle">run(tickers, --report)</text>
+<path d="M211.5,438 V452 H446.0 V522" fill="none" stroke="#C2540A" stroke-width="2" marker-end="url(#arrowSlate)"/>
+<rect x="299.525" y="440.7" width="58.449999999999996" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="328.75" y="448.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#C2540A" text-anchor="middle">filings</text>
+<path d="M522.5,438 V460 H514.0 V522" fill="none" stroke="#C2540A" stroke-width="2" marker-end="url(#arrowSlate)"/>
+<rect x="476.325" y="448.7" width="83.85" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="518.25" y="456.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#C2540A" text-anchor="middle">transcripts</text>
+<rect x="48" y="686" width="1260" height="184" rx="16" fill="#F5F7FA"/>
+<circle cx="75" cy="711" r="13" fill="#1E3A5F"/>
+<text x="75" y="716" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="98" y="716" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1E3A5F" text-anchor="start" letter-spacing="0.2px">Stage 2 — Build the Search Index (per report)</text>
+<rect x="64" y="730" width="295.0" height="126" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="64" y="730" width="5" height="126" rx="2.5" fill="#2563AF"/>
+<path d="M83,745 h15 l7,7 v18 a2,2 0 0 1 -2,2 h-18 a2,2 0 0 1 -2,-2 v-24 a2,2 0 0 1 2,-2 z" fill="#FFFFFF" stroke="#2563AF" stroke-width="1.6"/>
+<path d="M98,745 v6 a1,1 0 0 0 1,1 h6" fill="none" stroke="#2563AF" stroke-width="1.4"/>
+<line x1="86" y1="758" x2="100" y2="758" stroke="#2563AF" stroke-width="1.3" opacity="0.65"/>
+<line x1="86" y1="762" x2="100" y2="762" stroke="#2563AF" stroke-width="1.3" opacity="0.65"/>
+<line x1="86" y1="766" x2="100" y2="766" stroke="#2563AF" stroke-width="1.3" opacity="0.65"/>
+<text x="116" y="756" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Extract PDF text</text>
+<text x="116" y="773.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">pypdf, page by page</text>
+<text x="116" y="791.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">pdf_workers = 8 (parallel)</text>
+<rect x="375.0" y="730" width="295.0" height="126" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="375.0" y="730" width="5" height="126" rx="2.5" fill="#2563AF"/>
+<rect x="393.0" y="746" width="22" height="22" rx="2" fill="none" stroke="#2563AF" stroke-width="1.4"/>
+<line x1="393.0" y1="757.0" x2="415.0" y2="757.0" stroke="#2563AF" stroke-width="1.2"/>
+<line x1="404.0" y1="746" x2="404.0" y2="768" stroke="#2563AF" stroke-width="1.2"/>
+<text x="427.0" y="756" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Chunk text</text>
+<text x="427.0" y="773.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">4,000 chars (~1,000 tokens)</text>
+<text x="427.0" y="791.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">400-char overlap, paragraph-aware</text>
+<rect x="686.0" y="730" width="295.0" height="126" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="686.0" y="730" width="5" height="126" rx="2.5" fill="#7C3AED"/>
+<circle cx="715.0" cy="757.0" r="11.0" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+<circle cx="710.0" cy="753.0" r="1.7" fill="#7C3AED"/>
+<circle cx="720.0" cy="753.0" r="1.7" fill="#7C3AED"/>
+<circle cx="715.0" cy="757.0" r="1.7" fill="#7C3AED"/>
+<circle cx="710.0" cy="762.0" r="1.7" fill="#7C3AED"/>
+<circle cx="720.0" cy="762.0" r="1.7" fill="#7C3AED"/>
+<line x1="710.0" y1="753.0" x2="715.0" y2="757.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="720.0" y1="753.0" x2="715.0" y2="757.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="715.0" y1="757.0" x2="710.0" y2="762.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="715.0" y1="757.0" x2="720.0" y2="762.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="710.0" y1="753.0" x2="720.0" y2="753.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<text x="738.0" y="756" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Embed chunks</text>
+<rect x="901.4" y="742" width="67.6" height="20" rx="10.0" fill="#F3EEFF"/>
+<text x="935.1999999999999" y="755.675" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7C3AED" text-anchor="middle">OpenAI</text>
+<text x="738.0" y="773.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">text-embedding-3-small</text>
+<text x="738.0" y="791.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">batches of 250 chunks/request</text>
+<rect x="997.0" y="730" width="295.0" height="126" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="997.0" y="730" width="5" height="126" rx="2.5" fill="#0E8F6B"/>
+<ellipse cx="1026.0" cy="749" rx="11.0" ry="4" fill="#FFFFFF" stroke="#0E8F6B" stroke-width="1.6"/>
+<path d="M1015.0,749 v16 a11.0,4 0 0 0 22.0,0 v-16" fill="#FFFFFF" stroke="#0E8F6B" stroke-width="1.6"/>
+<ellipse cx="1026.0" cy="765" rx="11.0" ry="4" fill="none" stroke="#0E8F6B" stroke-width="1.3" opacity="0.55"/>
+<text x="1049.0" y="756" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Vector cache</text>
+<text x="1049.0" y="773.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">data/.cache/embeddings/</text>
+<text x="1049.0" y="791.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">&lt;ticker&gt;_&lt;hash&gt;.npz + .json</text>
+<text x="1049.0" y="809.94" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">cache hit → steps 1-3 skipped,</text>
+<text x="1049.0" y="827.9200000000001" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">vectors load straight from disk</text>
+<path d="M359.0,856 V868 H375.0 V856" fill="none" stroke="#2563AF" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="334.6" y="856.7" width="64.8" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="367.0" y="864.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#2563AF" text-anchor="middle">raw text</text>
+<path d="M670.0,856 V868 H686.0 V856" fill="none" stroke="#2563AF" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="636.075" y="856.7" width="83.85" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="678.0" y="864.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#2563AF" text-anchor="middle">text chunks</text>
+<path d="M981.0,856 V868 H997.0 V856" fill="none" stroke="#7C3AED" stroke-width="2.2" marker-end="url(#arrowAI)"/>
+<rect x="959.775" y="856.7" width="58.449999999999996" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="989.0" y="864.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#7C3AED" text-anchor="middle">vectors</text>
+<path d="M969.0,646 V670 H32 V793.0 H64" fill="none" stroke="#0E8F6B" stroke-width="2.2" marker-end="url(#arrowStore)"/>
+<rect x="458.575" y="658.7" width="83.85" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="500.5" y="666.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#0E8F6B" text-anchor="middle">stored PDFs</text>
+<rect x="48" y="896" width="1260" height="198" rx="16" fill="#F3EEFF"/>
+<circle cx="75" cy="921" r="13" fill="#1E3A5F"/>
+<text x="75" y="926" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="98" y="926" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1E3A5F" text-anchor="start" letter-spacing="0.2px">Stage 2 — Retrieve &amp; Write</text>
+<rect x="64" y="940" width="258" height="140" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="64" y="940" width="5" height="140" rx="2.5" fill="#2563AF"/>
+<circle cx="91.0" cy="965.0" r="6.5" fill="none" stroke="#2563AF" stroke-width="1.8"/>
+<line x1="95.6" y1="969.6" x2="101.0" y2="975.0" stroke="#2563AF" stroke-width="2" stroke-linecap="round"/>
+<text x="116" y="966" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Retrieve top-k</text>
+<text x="116" y="983.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Cosine similarity + 15%</text>
+<text x="116" y="1001.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">recency boost</text>
+<text x="116" y="1019.94" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">stratified by fiscal year</text>
+<text x="116" y="1037.92" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">for trend topics · top_k 10-35</text>
+<rect x="338" y="940" width="322" height="140" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="338" y="940" width="5" height="140" rx="2.5" fill="#7C3AED"/>
+<circle cx="367.0" cy="967.0" r="11.0" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.6"/>
+<circle cx="362.0" cy="963.0" r="1.7" fill="#7C3AED"/>
+<circle cx="372.0" cy="963.0" r="1.7" fill="#7C3AED"/>
+<circle cx="367.0" cy="967.0" r="1.7" fill="#7C3AED"/>
+<circle cx="362.0" cy="972.0" r="1.7" fill="#7C3AED"/>
+<circle cx="372.0" cy="972.0" r="1.7" fill="#7C3AED"/>
+<line x1="362.0" y1="963.0" x2="367.0" y2="967.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="372.0" y1="963.0" x2="367.0" y2="967.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="367.0" y1="967.0" x2="362.0" y2="972.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="367.0" y1="967.0" x2="372.0" y2="972.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<line x1="362.0" y1="963.0" x2="372.0" y2="963.0" stroke="#7C3AED" stroke-width="1" opacity="0.8"/>
+<text x="390" y="966" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Topic extraction</text>
+<rect x="537.4" y="952" width="110.6" height="20" rx="10.0" fill="#F3EEFF"/>
+<text x="592.6999999999999" y="965.675" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7C3AED" text-anchor="middle">gpt-4o-mini</text>
+<text x="390" y="983.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">10 research topics</text>
+<text x="390" y="1001.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">llm_workers = 5, run in parallel</text>
+<text x="390" y="1019.94" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Business Model, Competition,</text>
+<text x="390" y="1037.92" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Revenue &amp; Scale, Profitability …</text>
+<rect x="676" y="940" width="300" height="140" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="676" y="940" width="5" height="140" rx="2.5" fill="#7C3AED"/>
+<path d="M695,977 l2,-7 l18,-18 l6,6 l-18,18 z" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="728" y="966" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Report writer</text>
+<rect x="887.8" y="952" width="76.19999999999999" height="20" rx="10.0" fill="#F3EEFF"/>
+<text x="925.9" y="965.675" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7C3AED" text-anchor="middle">gpt-5.4</text>
+<text x="728" y="983.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Drafts the report from the 10 topic</text>
+<text x="728" y="1001.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">notes + a live market snapshot</text>
+<text x="728" y="1019.94" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">(Yahoo Finance) · reasoning: high</text>
+<rect x="992" y="940" width="280" height="140" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="992" y="940" width="5" height="140" rx="2.5" fill="#7C3AED"/>
+<path d="M1011,977 l2,-7 l18,-18 l6,6 l-18,18 z" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="1044" y="966" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Formatter</text>
+<rect x="1183.8" y="952" width="76.19999999999999" height="20" rx="10.0" fill="#F3EEFF"/>
+<text x="1221.8999999999999" y="965.675" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#7C3AED" text-anchor="middle">gpt-5.4</text>
+<text x="1044" y="983.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Editorial rewrite pass —</text>
+<text x="1044" y="1001.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">same facts, polished prose,</text>
+<text x="1044" y="1019.94" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">reasoning: high</text>
+<path d="M322,1080 V1092 H338 V1080" fill="none" stroke="#7C3AED" stroke-width="2.2" marker-end="url(#arrowAI)"/>
+<rect x="284.9" y="1080.7" width="90.19999999999999" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="330.0" y="1088.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#7C3AED" text-anchor="middle">top-k chunks</text>
+<path d="M660,1080 V1092 H676 V1080" fill="none" stroke="#7C3AED" stroke-width="2.2" marker-end="url(#arrowAI)"/>
+<rect x="616.55" y="1080.7" width="102.89999999999999" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="668.0" y="1088.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#7C3AED" text-anchor="middle">10 topic notes</text>
+<path d="M976,1080 V1092 H992 V1080" fill="none" stroke="#7C3AED" stroke-width="2.2" marker-end="url(#arrowAI)"/>
+<rect x="932.55" y="1080.7" width="102.89999999999999" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="984.0" y="1088.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#7C3AED" text-anchor="middle">draft markdown</text>
+<path d="M1144.5,856 V880 H32 V1010.0 H64" fill="none" stroke="#7C3AED" stroke-width="2.2" marker-end="url(#arrowAI)"/>
+<rect x="539.975" y="868.7" width="96.55" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="588.25" y="876.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#7C3AED" text-anchor="middle">chunk vectors</text>
+<rect x="48" y="1120" width="1260" height="150" rx="16" fill="#E8F7F1"/>
+<circle cx="75" cy="1145" r="13" fill="#1E3A5F"/>
+<text x="75" y="1150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="98" y="1150" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="16.5" font-weight="700" fill="#1E3A5F" text-anchor="start" letter-spacing="0.2px">Export &amp; Outputs</text>
+<rect x="64" y="1164" width="398.6666666666667" height="92" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="64" y="1164" width="5" height="92" rx="2.5" fill="#2563AF"/>
+<path d="M93.0,1180 v13 m-5,-5 l5,-5 l5,5" fill="none" stroke="#2563AF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M83,1198 v4 a2,2 0 0 0 2,2 h16 a2,2 0 0 0 2,-2 v-4" fill="none" stroke="#2563AF" stroke-width="1.8" stroke-linecap="round"/>
+<text x="116" y="1190" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Exporter</text>
+<text x="116" y="1207.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Markdown → .md / .docx / .pdf</text>
+<text x="116" y="1225.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">cost.json — tokens &amp; USD per stage</text>
+<rect x="478.6666666666667" y="1164" width="398.6666666666667" height="92" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="478.6666666666667" y="1164" width="5" height="92" rx="2.5" fill="#0E8F6B"/>
+<rect x="496.6666666666667" y="1184" width="10.92" height="5" rx="1.4" fill="#FFFFFF" stroke="#0E8F6B" stroke-width="1.6"/>
+<rect x="496.6666666666667" y="1187" width="22" height="14" rx="2.2" fill="#FFFFFF" stroke="#0E8F6B" stroke-width="1.6"/>
+<text x="530.6666666666667" y="1190" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Report files</text>
+<text x="530.6666666666667" y="1207.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">data/&lt;TICKER&gt;/reports/</text>
+<text x="530.6666666666667" y="1225.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">&lt;ticker&gt;_report_&lt;timestamp&gt;.*</text>
+<rect x="893.3333333333334" y="1164" width="398.6666666666667" height="92" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="893.3333333333334" y="1164" width="5" height="92" rx="2.5" fill="#2563AF"/>
+<path d="M922.3333333333334,1180 l10.0,4 l-10.0,4 l-10.0,-4 z" fill="#2563AF" opacity="1" stroke="#2563AF" stroke-width="1.3"/>
+<path d="M922.3333333333334,1185 l10.0,4 l-10.0,4 l-10.0,-4 z" fill="#FFFFFF" opacity="0.6499999999999999" stroke="#2563AF" stroke-width="1.3"/>
+<path d="M922.3333333333334,1190 l10.0,4 l-10.0,4 l-10.0,-4 z" fill="#FFFFFF" opacity="0.95" stroke="#2563AF" stroke-width="1.3"/>
+<text x="945.3333333333334" y="1190" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Library page</text>
+<text x="945.3333333333334" y="1207.98" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">Browse, preview &amp; download</text>
+<text x="945.3333333333334" y="1225.96" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.6" font-weight="500" fill="#5B6B7C" text-anchor="start">past reports per ticker</text>
+<path d="M462.6666666666667,1256 V1268 H478.6666666666667 V1256" fill="none" stroke="#0E8F6B" stroke-width="2.2" marker-end="url(#arrowStore)"/>
+<rect x="425.5666666666667" y="1256.7" width="90.19999999999999" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="470.6666666666667" y="1264.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#0E8F6B" text-anchor="middle">writes files</text>
+<path d="M877.3333333333334,1256 V1268 H893.3333333333334 V1256" fill="none" stroke="#0E8F6B" stroke-width="2.2" marker-end="url(#arrowStore)"/>
+<rect x="830.7083333333334" y="1256.7" width="109.25" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="885.3333333333334" y="1264.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#0E8F6B" text-anchor="middle">reports/ folder</text>
+<path d="M1132.0,1080 V1104 H32 V1210.0 H64" fill="none" stroke="#2563AF" stroke-width="2.2" marker-end="url(#arrow)"/>
+<rect x="530.55" y="1092.7" width="102.89999999999999" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="582.0" y="1100.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#2563AF" text-anchor="middle">final markdown</text>
+<rect x="1332" y="148" width="300" height="1122" rx="16" fill="#F5F7FA"/>
+<rect x="1346" y="160" width="150" height="24" rx="12.0" fill="#1E3A5F"/>
+<text x="1421.0" y="175.85" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">CONFIG &amp; SECRETS</text>
+<rect x="1348" y="196" width="268" height="190" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="1348" y="196" width="5" height="190" rx="2.5" fill="#C2540A"/>
+<rect x="1369" y="222" width="16" height="12" rx="2.5" fill="#FFFFFF" stroke="#C2540A" stroke-width="1.6"/>
+<path d="M1372,222 v-3 a5.0,5.0 0 0 1 10,0 v3" fill="none" stroke="#C2540A" stroke-width="1.6"/>
+<circle cx="1377.0" cy="228" r="1.6" fill="#C2540A"/>
+<text x="1400" y="222" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">.env (secrets)</text>
+<text x="1400" y="240.6" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">OPENAI_API_KEY</text>
+<text x="1400" y="259.2" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">SEC_API_KEY</text>
+<text x="1400" y="277.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">EARNINGSCALL_API_KEY</text>
+<text x="1400" y="296.40000000000003" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">never committed to git</text>
+<rect x="1348" y="408" width="268" height="190" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="1348" y="408" width="5" height="190" rx="2.5" fill="#2563AF"/>
+<circle cx="1377.0" cy="435.0" r="7.0" fill="none" stroke="#2563AF" stroke-width="1.8"/>
+<circle cx="1377.0" cy="435.0" r="2" fill="#2563AF"/>
+<line x1="1386.5" y1="435.0" x2="1389.2" y2="435.0" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="1383.7" y1="441.7" x2="1385.7" y2="443.7" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="1377.0" y1="444.4" x2="1377.0" y2="447.2" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="1370.3" y1="441.7" x2="1368.3" y2="443.7" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="1367.5" y1="435.0" x2="1364.8" y2="435.0" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="1370.3" y1="428.3" x2="1368.3" y2="426.3" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="1377.0" y1="425.6" x2="1377.0" y2="422.8" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<line x1="1383.7" y1="428.3" x2="1385.7" y2="426.3" stroke="#2563AF" stroke-width="2.1" stroke-linecap="round"/>
+<text x="1400" y="434" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">config/settings.yaml</text>
+<text x="1400" y="452.6" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">models: gpt-4o-mini, gpt-5.4,</text>
+<text x="1400" y="471.20000000000005" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">text-embedding-3-small</text>
+<text x="1400" y="489.80000000000007" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">doc limits, concurrency,</text>
+<text x="1400" y="508.4000000000001" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">chunk_size / overlap</text>
+<rect x="1348" y="620" width="268" height="190" rx="12" filter="url(#cardShadow)" fill="#FFFFFF" stroke="#D7DEE6" stroke-width="1.2"/>
+<rect x="1348" y="620" width="5" height="190" rx="2.5" fill="#7C3AED"/>
+<path d="M1367,657 l2,-7 l18,-18 l6,6 l-18,18 z" fill="#FFFFFF" stroke="#7C3AED" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="1400" y="646" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1C2733" text-anchor="start">Prompt overrides</text>
+<text x="1400" y="664.6" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">data/.settings/</text>
+<text x="1400" y="683.2" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">report_prompts.json</text>
+<text x="1400" y="701.8000000000001" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">edited from the Prompt</text>
+<text x="1400" y="720.4000000000001" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="500" fill="#5B6B7C" text-anchor="start">Settings page, versioned</text>
+<path d="M1348,291.0 H1320 V314 H1308" fill="none" stroke="#C2540A" stroke-width="1.8" stroke-dasharray="6,4" marker-end="url(#arrowSlate)"/>
+<rect x="1215.6" y="302.7" width="64.8" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="1248" y="310.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#C2540A" text-anchor="middle">API keys</text>
+<path d="M1348,503.0 H1320 V698 H1308" fill="none" stroke="#8695A7" stroke-width="1.8" stroke-dasharray="6,4" marker-end="url(#arrowSlate)"/>
+<rect x="1164.8" y="686.7" width="166.39999999999998" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="1248" y="694.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#8695A7" text-anchor="middle">models, limits, chunking</text>
+<path d="M1348,715.0 H1320 V908 H1308" fill="none" stroke="#7C3AED" stroke-width="1.8" stroke-dasharray="6,4" marker-end="url(#arrowAI)"/>
+<rect x="1187.025" y="896.7" width="121.94999999999999" height="17.3" rx="5" fill="#FFFFFF" stroke="none" stroke-width="1.2" opacity="0.94"/>
+<text x="1248" y="904.8" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.3" font-weight="600" fill="#7C3AED" text-anchor="middle">active prompt set</text>
+<line x1="1348" y1="836" x2="1616" y2="836" stroke="#D7DEE6" stroke-width="1.2"/>
+<text x="1348" y="858" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="500" fill="#8695A7" text-anchor="start"><tspan x="1348" dy="0">Every setting here is a plain file</tspan><tspan x="1348" dy="19">in the repo — no external config</tspan><tspan x="1348" dy="19">service, no database. Edit</tspan><tspan x="1348" dy="19">config/settings.yaml or .env and</tspan><tspan x="1348" dy="19">restart.</tspan></text>
+<text x="1348" y="964" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-style="italic" fill="#8695A7" font-weight="500">— config.py</text>
+<text x="840.0" y="1316" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11.5" font-weight="500" fill="#8695A7" text-anchor="middle">Local-first: all filings, transcripts, embeddings and reports live under data/ (git-ignored). Costs are tracked per report in cost.json.</text>
+</svg>

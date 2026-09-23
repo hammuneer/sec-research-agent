@@ -1,0 +1,41 @@
+# Application settings for sec-research-agent.
+# Secrets (API keys) never go here - put them in `.env` (see `.env.example`).
+# Every key is optional; missing keys fall back to the defaults in
+# `src/sec_research_agent/config.py`.
+
+models:
+  extraction: gpt-4o-mini        # topic extraction over retrieved chunks
+  report: gpt-5.4                # writes the research report
+  formatting: gpt-5.4            # editorial rewrite of the report
+  embedding: text-embedding-3-small
+  reasoning_effort: high         # GPT-5 family only: none | low | medium | high | xhigh
+
+# How many documents of each type to keep per company.
+documents:
+  annual_reports: 5              # 10-K
+  quarterly_reports: 8           # 10-Q
+  proxy_statements: 1            # DEF 14A
+  earnings_calls: 8              # transcripts, past calls only
+
+concurrency:
+  collection_workers: 4          # tickers downloaded in parallel
+  report_workers: 2              # reports generated in parallel
+  llm_workers: 5                 # parallel topic extractions per report
+  pdf_workers: 8                 # parallel PDF text extraction
+
+retrieval:
+  chunk_size: 4000
+  chunk_overlap: 400
+  use_cache: true                # reuse embeddings when documents are unchanged
+
+report:
+  brand_name: Involabs Financial Agent
+  # Optional full-width header image drawn at the top of every PDF page.
+  letterhead_image: null
+
+# USD per 1M tokens. Extend or override as model prices change.
+pricing:
+  gpt-5: { input: 1.25, output: 10.0 }
+  gpt-5.4: { input: 2.50, output: 15.0 }
+  gpt-4o-mini: { input: 0.15, output: 0.60 }
+  text-embedding-3-small: { input: 0.02, output: 0.0 }
