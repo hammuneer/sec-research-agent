@@ -21,12 +21,12 @@ classifiers = [
     "Topic :: Office/Business :: Financial :: Investment",
 ]
 dependencies = [
-    "earningscall>=1.0,<3",
+    "earningscall>=1.0,<4",
     "numpy>=1.26,<3",
     "openai>=1.60,<4",
     "pydantic>=2.6,<3",
     "pydantic-settings>=2.2,<3",
-    "pypdf>=4.0,<7",
+    "pypdf>=4.0,<8",
     "python-docx>=1.1,<2",
     "PyYAML>=6.0,<7",
     "reportlab>=4.0,<6",
